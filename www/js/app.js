@@ -55,12 +55,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
+    .state('app.fibonacci', {
+      url: '/fibonacci',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'templates/fibonacci.html',
+          controller: 'FibonacciCtrl'
         }
       }
     })

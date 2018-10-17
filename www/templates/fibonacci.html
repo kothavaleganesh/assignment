@@ -1,0 +1,15 @@
+<ion-view view-title="Fibonacci">
+  <ion-content>
+      <div class="list">
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Enter Number</span>
+            <input type="number" placeholder="Enter Number" ng-model="fibNumber">
+          </label>
+ <button class="button button-block button-positive" ng-click="fibonacci(fibNumber)">
+get Fib            </button>
+          <div ng-repeat="n in fib track by $index">{{n}}</div>
+          {{isPrime(primeNumber)}}
+         
+          </div>
+  </ion-content>
+</ion-view>

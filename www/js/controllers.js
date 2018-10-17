@@ -41,15 +41,20 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('FibonacciCtrl', function($scope) {
+$scope.fibonacci =function(n){
+  var i;
+$scope.fib = []; // Initialize array!
+
+$scope.fib[0] = 0;
+$scope.fib[1] = 1;
+for (i = 2; i < n; i++) {
+  // Next fibonacci number = previous + one before previous
+  // Translated to JavaScript:
+  $scope.fib[i] = $scope.fib[i - 2] + $scope.fib[i - 1];
+  console.log($scope.fib[i]);
+}
+}
 })
 
 .controller('PrimeCtrl', function($scope, $stateParams) {
