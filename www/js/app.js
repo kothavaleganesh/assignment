@@ -36,11 +36,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.prime', {
+    url: '/prime',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/prime.html',
+        controller:'PrimeCtrl'
       }
     }
   })
