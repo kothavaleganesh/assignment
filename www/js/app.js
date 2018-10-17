@@ -46,11 +46,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.palindrome', {
+      url: '/palindrome',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/palindrome.html',
+          controller:'PalindromeCtrl'
         }
       }
     })
